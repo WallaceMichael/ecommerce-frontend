@@ -1,44 +1,67 @@
-import React from 'react';
-import { Nav, Navbar } from "react-bootstrap";
-import logo from '../assets/images/logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-regular-svg-icons'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
-
+import React from "react";
+import { Nav, Navbar, Form } from "react-bootstrap";
+import logo from "../assets/images/Logo.png";
+import cartIcon from "../assets/icons/cart.svg";
+import user from "../assets/icons/user.svg";
 
 const Home = () => {
   return (
     <>
       <header className="shadow">
-        <div className="bg-dark text-center py-3">
-          <span className="text-white">Your fashion store</span>
-            </div>
-            
         <div className="container">
           <Navbar expand="lg" className="bg-body-tertiary">
-              <Navbar.Brand href="#"><img src={logo} alt="" width={170} /></Navbar.Brand>
-              <Navbar.Toggle aria-controls="navbarScroll" />
-              <Navbar.Collapse id="navbarScroll">
-                <Nav
-                  className="ms-auto my-2 my-lg-0"
-                  style={{ maxHeight: "100px" }}
-                  navbarScroll
-                >
-                  <Nav.Link href="#action1">Mens</Nav.Link>
-                  <Nav.Link href="#action2">Womens</Nav.Link>
-                  <Nav.Link href="#action3">Kids</Nav.Link>
-                </Nav>
-                <div className="nav-right d-flex">
-                  <a href="">
-                    <FontAwesomeIcon icon={faUser} />
-                  </a>
+            <Navbar.Brand href="#">
+              <img src={logo} alt="" width={77} />
+            </Navbar.Brand>
 
-                  <a href="" className="ms-3">
-                    <FontAwesomeIcon icon={faCartShopping} />
-                  </a>
-                </div>
-              </Navbar.Collapse>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+
+            <Navbar.Collapse
+              id="navbarScroll"
+              className="d-flex align-items-center gap-4 w-100"
+            >
+              {/* MENU */}
+              <Nav className="ms-3">
+                <Nav.Link>Men</Nav.Link>
+                <Nav.Link>Women</Nav.Link>
+                <Nav.Link>Fragrance</Nav.Link>
+                <Nav.Link>Footwear</Nav.Link>
+                <Nav.Link>Kids</Nav.Link>
+              </Nav>
+
+              <div className="nav-right d-flex align-items-center gap-2 ms-auto ">
+
+                {/* SEARCH */}
+                <Form className="search-box">
+                  <span className="search-icon">
+                    <svg
+                      width="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <circle cx="11" cy="11" r="8" />
+                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                  </span>
+
+                  <Form.Control
+                    type="search"
+                    placeholder="Search entire store here..."
+                    className="search-input"
+                  />
+                </Form>
+
+                {/* ICONES */}
+                <a href="" className="icon-link">
+                  <img src={cartIcon} alt="Cart" />
+                </a>
+
+                <a href="" className="icon-link">
+                  <img src={user} alt="User" />
+                </a>
+              </div>
+            </Navbar.Collapse>
           </Navbar>
         </div>
       </header>

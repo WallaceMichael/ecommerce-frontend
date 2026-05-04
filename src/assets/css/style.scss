@@ -8,6 +8,7 @@ $primary-color: #43c3d1;
 $primary-black: #061123;
 $secondary-color: #0284ff;
 $tertiary-color: #2f4858;
+$transparent: rgba(0, 0, 0, 0);
 
 body {
     font-family: $primary-font;
@@ -38,6 +39,67 @@ a {
   &::hover {
         color: $primary-color;
     }
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #f3f3f3;
+    border-radius: 50px;
+    padding: 8px 16px;
+    width: 400px; /* ajusta conforme quiser */
+    height: 40px;
+}
+
+.search-icon {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #999;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    box-shadow: none !important;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.bg-body-tertiary {
+    background-color: $transparent !important;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+
+    color: #333; /* controla o SVG */
+    transition: all 0.2s ease;
+}
+
+.icon-link .icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor; /* importante pro seu SVG */
+    fill: none; /* como seu ícone é outline */
+}
+
+.icon-link:hover {
+    background-color: #ddd;
+    color: #ff4d4f; /* muda o ícone */
+    transform: scale(1.05);
 }
 
 .primary-text {
@@ -102,6 +164,7 @@ header {
       .nav-link {
         color: $primary-black;
         font-weight: 500;
+        text-transform: uppercase;
         &.active {
           color: $primary-color;
         }

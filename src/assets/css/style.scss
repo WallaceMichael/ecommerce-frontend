@@ -1,96 +1,94 @@
 /**** Google Font **********/
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /**** Global Variables **********/
 $primary-font: "Inter", sans-serif;
-$primary-white: #FFF;
-$primary-color: #43c3D1;
+$primary-white: #fff;
+$primary-color: #43c3d1;
 $primary-black: #061123;
-$secondary-color:#0284FF;
-$tertiary-color:#2F4858;
+$secondary-color: #0284ff;
+$tertiary-color: #2f4858;
 
-
-body{
+body {
     font-family: $primary-font;
     font-size: 1em;
     color: $primary-black;
     font-weight: 500;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
 
-h3{
+h3 {
     font-size: 1.3em;
 }
 
-h4{
+h4 {
     font-size: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: $primary-black;
-    &::hover{
+  &::hover {
         color: $primary-color;
     }
 }
 
-.primary-text{
-    color: $primary-color ;
+.primary-text {
+  color: $primary-color;
 }
 
-.secondary-text{
-    color: $secondary-color ;
+.secondary-text {
+  color: $secondary-color;
 }
 
-
-ul{
+ul {
     padding-left: 0;
-    li{
+  li {
         list-style: none;
     }
 }
 
-.container{
+.container {
     max-width: 1540px;
 }
 
-.btn{
-    &.btn-size{
+.btn {
+  &.btn-size {
         background-color: rgba($primary-black, 0.03);
         border-color: rgba($primary-black, 0.05);
         padding: 7px 15px;
-        &.active{
-            border-color:  rgba($primary-black, 0.20);;
+    &.active {
+      border-color: rgba($primary-black, 0.2);
         }
-        &:hover{
-            border-color:  rgba($primary-black, 0.20);;
+    &:hover {
+      border-color: rgba($primary-black, 0.2);
             color: $primary-black;
         }
     }
-    &.btn-primary{
+  &.btn-primary {
         background-color: $primary-color;
         border-color: $primary-color;
         padding: 7px 25px;
-        &:hover{
+    &:hover {
             background-color: $primary-black;
             border-color: $primary-black;
             color: $primary-white;
         }
     }
 
-    &.btn-secondary{
+  &.btn-secondary {
         background-color: $primary-black;
         border-color: $primary-black;
         color: $primary-white;
         padding: 7px 25px;
-        &:hover{
+    &:hover {
             background-color: $primary-color;
             border-color: $primary-color;
             color: $primary-white;
@@ -98,3 +96,19 @@ ul{
     }
 }
 
+header {
+  .navbar-expand-lg {
+    .navbar-nav {
+      .nav-link {
+        color: $primary-black;
+        font-weight: 500;
+        &.active {
+          color: $primary-color;
+        }
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <>
-      <header className="shadow">
+      <header>
         <div className="container">
           <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Brand href="#">
@@ -65,10 +65,17 @@ const Home = () => {
               </div>
             </Navbar.Collapse>
           </Navbar>
-
-          
         </div>
       </header>
+
+      {/* HERO SECTION */}
+      <section className="hero-section">
+        <div className="container">
+          <div className="hero-card">
+            
+          </div>
+        </div>
+      </section>
     </>
   );
 };

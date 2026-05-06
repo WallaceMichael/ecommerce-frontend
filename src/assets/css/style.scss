@@ -41,6 +41,19 @@ a {
     }
 }
 
+.hero-section {
+  padding: 20px 0 40px;
+}
+
+.hero-card {
+  position: relative;
+  background-color: #f0efed;
+  border-radius: 20px;
+  min-height: 440px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
 
 .search-box {
   display: flex;

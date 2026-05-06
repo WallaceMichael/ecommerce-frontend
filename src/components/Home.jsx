@@ -3,6 +3,8 @@ import { Nav, Navbar, Form } from "react-bootstrap";
 import logo from "../assets/images/Logo.png";
 import cartIcon from "../assets/icons/cart.svg";
 import user from "../assets/icons/user.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
@@ -11,40 +13,39 @@ const Home = () => {
         <div className="container">
           <Navbar expand="lg" className="bg-body-tertiary">
             <Navbar.Brand href="#">
-              <img src={logo} alt="" width={77} />
+              <img src={logo} alt="Logo" width={77} />
             </Navbar.Brand>
+
+            <div className="nav-icons-mobile d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+              <a href="" className="icon-link">
+                <img src={cartIcon} alt="Cart" />
+              </a>
+              <a href="" className="icon-link">
+                <img src={user} alt="User" />
+              </a>
+            </div>
 
             <Navbar.Toggle aria-controls="navbarScroll" />
 
             <Navbar.Collapse
               id="navbarScroll"
-              className="d-flex align-items-center gap-4 w-100"
+              className="navbar-collapse-custom"
             >
               {/* MENU */}
-              <Nav className="ms-3">
-                <Nav.Link>Men</Nav.Link>
-                <Nav.Link>Women</Nav.Link>
-                <Nav.Link>Fragrance</Nav.Link>
-                <Nav.Link>Footwear</Nav.Link>
-                <Nav.Link>Kids</Nav.Link>
+              <Nav className="ms-lg-3 w-lg-auto">
+                <Nav.Link href="#men">Men</Nav.Link>
+                <Nav.Link href="#women">Women</Nav.Link>
+                <Nav.Link href="#fragrance">Fragrance</Nav.Link>
+                <Nav.Link href="#footwear">Footwear</Nav.Link>
+                <Nav.Link href="#kids">Kids</Nav.Link>
               </Nav>
 
-              <div className="nav-right d-flex align-items-center gap-2 ms-auto ">
-
+              <div className="nav-right d-flex align-items-center gap-2 ms-lg-auto w-lg-auto">
                 {/* SEARCH */}
-                <Form className="search-box">
+                <Form className="search-box flex-grow-1">
                   <span className="search-icon">
-                    <svg
-                      width="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                    >
-                      <circle cx="11" cy="11" r="8" />
-                      <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                    </svg>
+                    <FontAwesomeIcon icon={faSearch} />
                   </span>
-
                   <Form.Control
                     type="search"
                     placeholder="Search entire store here..."
@@ -52,17 +53,20 @@ const Home = () => {
                   />
                 </Form>
 
-                {/* ICONES */}
-                <a href="" className="icon-link">
-                  <img src={cartIcon} alt="Cart" />
-                </a>
-
-                <a href="" className="icon-link">
-                  <img src={user} alt="User" />
-                </a>
+                {/* Ícones visíveis apenas no desktop */}
+                <div className="d-none d-lg-flex align-items-center gap-2">
+                  <a href="" className="icon-link">
+                    <img src={cartIcon} alt="Cart" />
+                  </a>
+                  <a href="" className="icon-link">
+                    <img src={user} alt="User" />
+                  </a>
+                </div>
               </div>
             </Navbar.Collapse>
           </Navbar>
+
+          
         </div>
       </header>
     </>

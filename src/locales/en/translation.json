@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "men": "Men",
+    "women": "Women",
+    "fragrance": "Fragrance",
+    "footwear": "Footwear",
+    "kids": "Kids",
+    "searchPlaceholder": "Search entire store here..."
+  },
+  "hero": {
+    "slide1": {
+      "label": "New Collection",
+      "title": "Style that\nfollows you.",
+      "description": "Exclusive pieces for those who value attitude, comfort and personality.",
+      "button": "View Collection",
+      "badgeTag": "Exclusive",
+      "badgeText": "limited edition",
+      "features": {
+        "design": "Signature\ndesign",
+        "quality": "Premium\nquality",
+        "shipping": "Safe & fast\nshipping"
+      }
+    },
+    "slide2": {
+      "label": "For Every Moment",
+      "title": "Comfort that\nstands out.",
+      "description": "Versatile looks for everyday wear or when you want to stand out.",
+      "button": "Shop Now",
+      "badgeTag": "New Arrivals",
+      "badgeText": "just landed",
+      "features": {
+        "trends": "Latest\ntrends",
+        "prices": "Best\nprices",
+        "styles": "Styles for\neveryone"
+      }
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up"
+  }
+}

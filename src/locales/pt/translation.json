@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "men": "Masculino",
+    "women": "Feminino",
+    "fragrance": "Fragrância",
+    "footwear": "Calçados",
+    "kids": "Infantil",
+    "searchPlaceholder": "Busque em toda a loja..."
+  },
+  "hero": {
+    "slide1": {
+      "label": "Nova Coleção",
+      "title": "Estilo que\nte acompanha.",
+      "description": "Peças exclusivas para quem valoriza atitude, conforto e personalidade.",
+      "button": "Ver Coleção",
+      "badgeTag": "Exclusivo",
+      "badgeText": "edição limitada",
+      "features": {
+        "design": "Design\nautoral",
+        "quality": "Qualidade\npremium",
+        "shipping": "Compra segura\ne rápida"
+      }
+    },
+    "slide2": {
+      "label": "Para Todos os Momentos",
+      "title": "Conforto que\nse destaca.",
+      "description": "Looks versáteis para o dia a dia ou para quem gosta de se destacar.",
+      "button": "Comprar Agora",
+      "badgeTag": "Lançamentos",
+      "badgeText": "chegaram agora",
+      "features": {
+        "trends": "Tendências\natuais",
+        "prices": "Melhores\npreços",
+        "styles": "Estilos para\ntodos"
+      }
+    }
+  },
+  "auth": {
+    "login": "Entrar",
+    "signup": "Cadastre-se"
+  }
+}

@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  &.btn-size {
+    background-color: rgba($primary-black, 0.03);
+    border-color: rgba($primary-black, 0.05);
+    padding: 7px 15px;
+
+    &.active {
+      border-color: rgba($primary-black, 0.2);
+    }
+
+    &:hover {
+      border-color: rgba($primary-black, 0.2);
+      color: $primary-black;
+    }
+  }
+
+  &.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    padding: 7px 25px;
+
+    &:hover {
+      background-color: $primary-black;
+      border-color: $primary-black;
+      color: $primary-white;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $primary-black;
+    border-color: $primary-black;
+    color: $primary-white;
+    padding: 7px 25px;
+
+    &:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: $primary-white;
+    }
+  }
+}

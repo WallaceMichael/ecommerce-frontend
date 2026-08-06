@@ -1,0 +1,84 @@
+@use "../abstracts/variables" as *;
+
+.search-box-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+
+  &:hover {
+    background-color: #ddd;
+    color: $primary-color;
+  }
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 50px;
+  height: 40px;
+
+  width: 0;
+  padding: 0;
+  margin-left: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition: width 0.3s ease, opacity 0.2s ease, padding 0.3s ease, margin-left 0.3s ease;
+}
+
+.search-box-wrapper.expanded {
+  .search-box {
+    width: 280px;
+    padding: 0 16px;
+    margin-left: -40px;
+    padding-left: 48px;
+    opacity: 1;
+  }
+
+  .search-icon-toggle {
+    background-color: transparent;
+    position: relative;
+  }
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  box-shadow: none !important;
+  font-size: 14px;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .search-box-wrapper.expanded .search-box {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 16px;
+  }
+}

@@ -25,33 +25,25 @@ const Header = () => {
     <header>
       <div className="top-bar">
         <div className="container d-flex justify-content-between align-items-center h-100">
-
           <div className="top-bar-left d-flex align-items-center gap-3">
             <span className="small text-uppercase">{t("topbar.follow-us")}</span>
-
             <a href="#" aria-label="Instagram">
               <FaInstagram />
             </a>
-
             <a href="#" aria-label="Facebook">
               <FaFacebookF />
             </a>
-
             <a href="#" aria-label="Twitter">
               <FaXTwitter />
             </a>
           </div>
-
           <div className="top-bar-right d-flex align-items-center">
             <LanguageSwitcher />
-
             <span className="divider mx-3"></span>
-
             <a href="#contact" className="contact-link">
               {t("topbar.contact-us")}
             </a>
           </div>
-
         </div>
       </div>
       <div className="container">

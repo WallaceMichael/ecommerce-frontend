@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: $primary-font;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  button {
+    background: none;
+    border: none;
+    color: rgba($primary-white, 0.4);
+    cursor: pointer;
+    padding: 4px 6px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-white;
+    }
+
+    &.active {
+      color: $primary-color;
+    }
+  }
+}
+
+.language-divider {
+  color: rgba($primary-white, 0.2);
+  font-size: 0.75rem;
+}

@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as *;
+
+.login-cadastro {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: $primary-font;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 160px;
+
+  a {
+    color: rgba($primary-black, 0.4);
+    padding: 4px 6px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $primary-black;
+    }
+  }
+}
+
+.login-cadastro-divider {
+  color: rgba($primary-black, 0.2);
+  font-size: 0.75rem;
+}

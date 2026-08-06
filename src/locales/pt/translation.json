@@ -38,5 +38,10 @@
   "auth": {
     "login": "Entrar",
     "signup": "Cadastre-se"
+  },
+  "topbar": {
+    "follow-us": "Siga-nos",
+    "contact-us": "Contato"
   }
+  
 }

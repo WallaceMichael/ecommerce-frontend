@@ -38,5 +38,10 @@
   "auth": {
     "login": "Login",
     "signup": "Sign Up"
+  },
+  "topbar": {
+    "follow-us": "Follow us",
+    "contact-us": "Contact Us"
   }
+  
 }

@@ -42,6 +42,9 @@
   "topbar": {
     "follow-us": "Siga-nos",
     "contact-us": "Contato"
+  },
+  "home": {
+    "editorsPick": "Escolha do Editor"
   }
   
 }
